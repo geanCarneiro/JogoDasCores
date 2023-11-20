@@ -5,7 +5,6 @@ jQuery(function (){
     }
 
     corEscolhidaIndex = Math.floor(Math.random() * qtCoresEscolhidas);
-    corEscolhidaIndex = 0
 
     updateTentativas()
 
