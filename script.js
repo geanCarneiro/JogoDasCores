@@ -25,7 +25,7 @@ jQuery(function (){
                 tentativas++;
                 updateTentativas()
                 if(tentativas >= maxTentativas) {
-                    showEndGame("FIM DE JOGO, VOCê PERDEU!!")
+                    showEndGame("VOCÊ PERDEU, A COR ERA " + value.toUpperCase() + "!!")
                     fimDeJogo = true;
                 }
             }
