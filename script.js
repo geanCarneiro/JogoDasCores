@@ -9,10 +9,11 @@ jQuery(function (){
     updateTentativas()
 
     coresEscolhidas.forEach((value, index) => {
-        let novoElemento = jQuery('<div>', {
-            role: "button"
-        });
+        let novoElemento = jQuery('<div>');
         novoElemento.attr("index", index)
+        novoElemento.attr("role", "button")
+        novoElemento.attr("aria-label", value)
+        novoElemento.attr("tabIndex", 0)
         novoElemento.on("click", function (evt){
             if (fimDeJogo) return;
             i = novoElemento.attr("index");
