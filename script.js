@@ -14,7 +14,7 @@ jQuery(function (){
         novoElemento.attr("role", "button")
         novoElemento.attr("aria-label", value)
         novoElemento.attr("tabIndex", 0)
-        novoElemento.on("click", function (evt){
+        novoElemento.on("click", function (){
             if (fimDeJogo) return;
             i = novoElemento.attr("index");
             if(i == corEscolhidaIndex){
@@ -80,11 +80,6 @@ function showEndGame(msg) {
     $("#dialogScreen").css("height", "calc(" + $("#app").css("height") + " + 2rem)");
 }
 
-function clickOpcao(evt) {
-    let elem = evt.target;
-    let nome = elem.text();
-    alert("clicado em " + nome);
-}
 
 function updateTentativas(){
     $("span#tentativas").text(tentativas + "/" + maxTentativas);
